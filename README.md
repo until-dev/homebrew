@@ -1,11 +1,11 @@
-# until-dev/homebrew
+# until-dev/homebrew-tap
 
 Public Homebrew tap for [until](https://github.com/overmindtech/until): the `untl` CLI and, on macOS Apple Silicon, the `untl-desktop` app.
 
 ## Install
 
 ```bash
-brew install until-dev/homebrew/until
+brew install until-dev/tap/until
 ```
 
 - **macOS Apple Silicon:** installs `untl` on your PATH and `untl-desktop.app` under `$(brew --prefix)/Applications`.
@@ -32,7 +32,7 @@ Release assets are mirrored automatically from `overmindtech/until` tags by [`.g
 Bootstrap this repository from the until checkout:
 
 ```bash
-gh repo create until-dev/homebrew --public --description "Homebrew tap for until" --source=packaging/homebrew-tap --remote=origin --push
+gh repo create until-dev/homebrew-tap --public --description "Homebrew tap for until" --source=packaging/homebrew-tap --remote=origin --push
 ```
 
-Requires org permission to create `until-dev/homebrew` and a CI token with release upload plus contents and pull-request access on this repo (see PLAN-217).
+Requires org permission to create `until-dev/homebrew-tap` and a CI token with release upload plus contents and pull-request access on this repo (see PLAN-217).
