@@ -15,7 +15,7 @@ CLI binaries are verified against the mirrored `SHA256SUMS` file from each relea
 
 ## Distribution terms
 
-Public download URLs in this repository mirror release assets from the private until source tree. **Licence terms for redistributing the CLI and desktop app are pending legal sign-off** (see PLAN-217). Until those terms are published here, treat these binaries as early-access builds for invited testers only.
+Public download URLs in this repository mirror release assets from the private until source tree. **Licence terms for redistributing the CLI and desktop app are pending legal sign-off**. Until those terms are published here, treat these binaries as early-access builds for invited testers only.
 
 ## Unsigned macOS app
 
