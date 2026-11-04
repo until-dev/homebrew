@@ -3,7 +3,7 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "matchFileNames": ["Formula/until.rb"],
+      "matchFileNames": ["Formula/until.rb", "Casks/untl-desktop.rb"],
       "enabled": false
     }
   ]

@@ -4,14 +4,19 @@ Public Homebrew tap for [until](https://github.com/overmindtech/until): the `unt
 
 ## Install
 
+The `untl` CLI (macOS Apple Silicon and Linux x86_64):
+
 ```bash
 brew install until-dev/tap/until
 ```
 
-- **macOS Apple Silicon:** installs `untl` on your PATH and `untl-desktop.app` under `$(brew --prefix)/Applications`.
-- **Linux x86_64:** installs the CLI only.
+The `untl-desktop` app (macOS Apple Silicon). This also installs the CLI:
 
-CLI binaries are verified against the mirrored `SHA256SUMS` file from each release. The desktop DMG is copied byte-for-byte from the private release; its checksum is recorded in the formula.
+```bash
+brew install --cask until-dev/tap/untl-desktop
+```
+
+CLI binaries are verified against the mirrored `SHA256SUMS` file from each release. The desktop DMG is copied byte-for-byte from the private release, and its checksum is recorded in the cask.
 
 ## Distribution terms
 
@@ -19,7 +24,7 @@ Public download URLs in this repository mirror release assets from the private u
 
 ## Maintainers
 
-Release assets are mirrored automatically from `overmindtech/until` tags by [`.github/workflows/publish-public-cli.yml`](https://github.com/overmindtech/until/blob/main/.github/workflows/publish-public-cli.yml) in the main until repository. Formula bumps land as pull requests on this tap; merge when `brew test-bot` is green (no `pr-pull` — we ship prebuilt binaries, not bottles).
+Release assets are mirrored automatically from `overmindtech/until` tags by [`.github/workflows/publish-public-cli.yml`](https://github.com/overmindtech/until/blob/main/.github/workflows/publish-public-cli.yml) in the main until repository. Formula and cask bumps land together as pull requests on this tap; merge when `brew test-bot` is green (no `pr-pull` — we ship prebuilt binaries, not bottles).
 
 Bootstrap this repository from the until checkout:
 
