@@ -6,11 +6,11 @@ class Until < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/until-dev/homebrew/releases/download/v#{version}/untl-darwin-arm64"
+      url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-darwin-arm64"
       sha256 "e35f38c581e689908ee99e32ebfa31cde13853ea943a3e46e1233f912ffbbeed"
 
       resource "desktop" do
-        url "https://github.com/until-dev/homebrew/releases/download/v#{version}/untl-desktop-darwin-arm64.dmg"
+        url "https://github.com/until-dev/homebrew-tap/releases/download/v0.3.0/untl-desktop-darwin-arm64.dmg"
         sha256 "f4df9d43b970195751b7b0f820e69d419a612b7893df2de0c98c260d93a6caf5"
       end
     end
@@ -18,7 +18,7 @@ class Until < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/until-dev/homebrew/releases/download/v#{version}/untl-linux-amd64"
+      url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-linux-amd64"
       sha256 "59e4deccfcbbedeadb11c2b215ca1a9e2d8ca7062594f1db340b8a8b64586c7d"
     end
   end
@@ -59,10 +59,6 @@ class Until < Formula
       <<~EOS
         untl-desktop is linked at:
           #{HOMEBREW_PREFIX}/Applications/untl-desktop.app
-
-        The app is not notarized. On first launch you may need to allow it in
-        System Settings or run:
-          xattr -cr "#{HOMEBREW_PREFIX}/Applications/untl-desktop.app"
       EOS
     end
   end
