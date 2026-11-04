@@ -17,14 +17,6 @@ CLI binaries are verified against the mirrored `SHA256SUMS` file from each relea
 
 Public download URLs in this repository mirror release assets from the private until source tree. **Licence terms for redistributing the CLI and desktop app are pending legal sign-off**. Until those terms are published here, treat these binaries as early-access builds for invited testers only.
 
-## Unsigned macOS app
-
-Homebrew does not sign or notarize `untl-desktop`. On first launch you may need to allow the app in System Settings or clear quarantine:
-
-```bash
-xattr -cr "$(brew --prefix)/Applications/untl-desktop.app"
-```
-
 ## Maintainers
 
 Release assets are mirrored automatically from `overmindtech/until` tags by [`.github/workflows/publish-public-cli.yml`](https://github.com/overmindtech/until/blob/main/.github/workflows/publish-public-cli.yml) in the main until repository. Formula bumps land as pull requests on this tap; merge when `brew test-bot` is green (no `pr-pull` — we ship prebuilt binaries, not bottles).
