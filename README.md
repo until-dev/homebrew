@@ -1,22 +1,20 @@
 # until-dev/homebrew-tap
 
-Public Homebrew tap for [until](https://github.com/overmindtech/until): the `untl` CLI and, on macOS Apple Silicon, the `untl-desktop` app.
+Public Homebrew tap for [until](https://github.com/overmindtech/until): the `untl-desktop` app and the `untl` CLI for macOS Apple Silicon, shipped together as one cask.
 
 ## Install
 
-The `untl` CLI (macOS Apple Silicon and Linux x86_64):
-
-```bash
-brew install until-dev/tap/until
-```
-
-The `untl-desktop` app (macOS Apple Silicon). This also installs the CLI:
+On macOS Apple Silicon:
 
 ```bash
 brew install --cask until-dev/tap/untl-desktop
 ```
 
-CLI binaries are verified against the mirrored `SHA256SUMS` file from each release. The desktop DMG is copied byte-for-byte from the private release, and its checksum is recorded in the cask.
+This installs `untl-desktop.app` in `/Applications` and links the `untl` CLI bundled inside the app onto your PATH, so the app and the CLI are always the same version.
+
+On Linux x86_64, download `untl-linux-amd64` from this repository's [releases](https://github.com/until-dev/homebrew-tap/releases) and verify it against `SHA256SUMS`.
+
+The desktop DMG is copied byte-for-byte from the private release, and its checksum is recorded in the cask.
 
 ## Distribution terms
 
@@ -24,7 +22,7 @@ Public download URLs in this repository mirror release assets from the private u
 
 ## Maintainers
 
-Release assets are mirrored automatically from `overmindtech/until` tags by [`.github/workflows/publish-public-cli.yml`](https://github.com/overmindtech/until/blob/main/.github/workflows/publish-public-cli.yml) in the main until repository. Formula and cask bumps land together as pull requests on this tap; merge when `brew test-bot` is green (no `pr-pull` — we ship prebuilt binaries, not bottles).
+Release assets are mirrored automatically from `overmindtech/until` tags by [`.github/workflows/publish-public-cli.yml`](https://github.com/overmindtech/until/blob/main/.github/workflows/publish-public-cli.yml) in the main until repository. Cask bumps land as pull requests on this tap; merge when `brew test-bot` is green (no `pr-pull` — we ship prebuilt binaries, not bottles).
 
 Bootstrap this repository from the until checkout:
 
