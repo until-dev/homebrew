@@ -12,4 +12,10 @@ cask "untl-desktop" do
 
   app "untl-desktop.app"
   binary "#{appdir}/untl-desktop.app/Contents/Resources/bin/untl"
+
+  # The app is signed, notarized and checksum-verified, so skip the
+  # "downloaded from the internet" prompt on first launch.
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/untl-desktop.app"]
+  end
 end
