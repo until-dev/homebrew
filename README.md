@@ -12,7 +12,7 @@ brew install --cask until-dev/tap/untl-desktop
 
 This installs `untl-desktop.app` in `/Applications` and links the `untl` CLI bundled inside the app onto your PATH, so the app and the CLI are always the same version.
 
-On Linux x86_64, download `untl-linux-amd64` from this repository's [releases](https://github.com/until-dev/homebrew-tap/releases) and verify it against `SHA256SUMS`.
+On Linux, install the `until` package (CLI and desktop app) from the public Cloudsmith repository [`overmind/until`](https://cloudsmith.io/~overmind/repos/until/). For a CLI-only install, download `untl-linux-amd64` from this repository's [releases](https://github.com/until-dev/homebrew-tap/releases) and verify it against `SHA256SUMS`.
 
 The desktop DMG is copied byte-for-byte from the private release, and its checksum is recorded in the cask.
 
