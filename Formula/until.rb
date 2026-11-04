@@ -1,19 +1,18 @@
 class Until < Formula
   desc "Git-backed ticketing for people and agents"
   homepage "https://github.com/overmindtech/until"
-  version "0.3.0"
   license "LicenseRef-Until-Early-Access"
 
   on_macos do
     on_arm do
-      url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-darwin-arm64"
+      url "https://github.com/until-dev/homebrew-tap/releases/download/v0.3.0/untl-darwin-arm64"
       sha256 "e35f38c581e689908ee99e32ebfa31cde13853ea943a3e46e1233f912ffbbeed"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-linux-amd64"
+      url "https://github.com/until-dev/homebrew-tap/releases/download/v0.3.0/untl-linux-amd64"
       sha256 "59e4deccfcbbedeadb11c2b215ca1a9e2d8ca7062594f1db340b8a8b64586c7d"
     end
   end
