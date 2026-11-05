@@ -1,6 +1,6 @@
 cask "untl-desktop" do
-  version "0.6.0"
-  sha256 "d380a9d8b8530aef897997fcaa784a0ed2555d8fa081ee9b550de07a04d8d013"
+  version "0.7.0"
+  sha256 "048c0c3f632066380a96099e3473795ebd6d0cc46ccc29d481dac37a41c113cc"
 
   url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-desktop-darwin-arm64.dmg"
   name "untl-desktop"
