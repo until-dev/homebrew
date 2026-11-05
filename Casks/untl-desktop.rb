@@ -1,9 +1,9 @@
 cask "untl-desktop" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.9.0"
-  sha256 arm:          "d0f4996d2d0b094ef594e041753f4ee2ca7b5c33dc0bf228e919f43a6bbff681",
-         x86_64_linux: "07534e772f992b7618f545cbc0687ca236900588716c9c660ffe81ef5411f6dd"
+  version "0.10.1"
+  sha256 arm:          "13fbf2032f65067dde79dee073c24875affa8eb42ee19257fc1e5a8af72a7d29",
+         x86_64_linux: "3a20162d8a0c50741d730a40b4cd6096d6df8743867e6334b3b047125e5c5baf"
 
   on_macos do
     depends_on arch: :arm64
