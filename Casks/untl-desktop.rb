@@ -12,9 +12,13 @@ cask "untl-desktop" do
     binary "#{appdir}/untl-desktop.app/Contents/Resources/bin/untl"
 
     # The app is signed, notarized and checksum-verified, so skip the
-    # "downloaded from the internet" prompt on first launch.
-    postflight_steps do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/untl-desktop.app"]
+    # "downloaded from the internet" prompt on first launch. Clear the flag on
+    # the staged copy before Homebrew moves it into the appdir: macOS refuses
+    # changes to an app in /Applications without App Management, and a
+    # refusal must never fail the install.
+    preflight_steps do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/untl-desktop.app"],
+          must_succeed: false, print_stderr: false
     end
   end
   on_linux do
