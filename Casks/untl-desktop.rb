@@ -1,4 +1,4 @@
-cask "until" do
+cask "untl-desktop" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
   version "0.10.2"
@@ -31,7 +31,7 @@ cask "until" do
   end
 
   url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-desktop-#{os}"
-  name "Until"
+  name "untl-desktop"
   desc "Git-backed ticketing for people and agents"
   homepage "https://github.com/overmindtech/until"
 
