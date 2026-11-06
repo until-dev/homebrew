@@ -17,7 +17,7 @@ cask "untl-desktop" do
     # changes to an app in /Applications without App Management, and a
     # refusal must never fail the install.
     preflight_steps do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/untl-desktop.app"],
+      run "/usr/bin/xattr", args: ["-drs", "com.apple.quarantine", "{{staged_path}}/untl-desktop.app"],
           must_succeed: false, print_stderr: false
     end
   end
