@@ -1,13 +1,13 @@
 # until-dev/homebrew-tap
 
-Public Homebrew tap for [until](https://github.com/overmindtech/until): the `untl-desktop` app and the `untl` CLI for macOS Apple Silicon and Linux x86_64, shipped together as one cask.
+Public Homebrew tap for [until](https://github.com/overmindtech/until): one cask, `until`, that installs the `untl-desktop` app and the `untl` CLI for macOS Apple Silicon and Linux x86_64 at the same version.
 
 ## Install
 
 On macOS Apple Silicon or Linux x86_64:
 
 ```bash
-brew install --cask until-dev/tap/untl-desktop
+brew install --cask until-dev/tap/until
 ```
 
 On macOS this installs `untl-desktop.app` in `/Applications` and links the `untl` CLI bundled inside the app onto your PATH. On Linux it installs `untl-desktop.AppImage` in `~/Applications`, with a menu entry that opens `until://` links, and links the `untl` CLI from the same build onto your PATH. Either way the app and the CLI are always the same version.
