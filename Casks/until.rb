@@ -1,9 +1,9 @@
 cask "until" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.12.1"
-  sha256 arm:          "644e3bb019aa4b5bd0b86e64d4a6eaa858c5ae00c3870bcef8b98e4aaa0d5bc8",
-         x86_64_linux: "09c846cdcafbe5c70d403468d38b3492f90e2f2e12129160a750d066e0f192ce"
+  version "0.14.0"
+  sha256 arm:          "6747a508c12bf891876783e11615f9261f8b478d2086ca5a7cb7314e3171b843",
+         x86_64_linux: "c0c9e349f02b6373b77cccabafd16195eb831401312d22ce054d5d9b0034bc29"
 
   on_macos do
     depends_on arch: :arm64
@@ -36,6 +36,14 @@ cask "until" do
   homepage "https://github.com/overmindtech/until"
 
   caveats <<~EOS
-    Run `untl` to get started from the command line.
+    Until sends one anonymous ping a day: a hash of you, a hash of your
+    Workspace, and the Until version. It never sends names, emails,
+    repository names or Ticket content.
+    See exactly what it sends with `untl telemetry`. Turn it off with
+    `untl telemetry off`, or set UNTIL_TELEMETRY=0 or DO_NOT_TRACK=1.
+
+    To get started from the command line, run:
+
+        $ untl
   EOS
 end
