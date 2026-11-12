@@ -4,9 +4,10 @@ Public Homebrew tap for [Until](https://until.dev): one cask, `until`, that inst
 
 ## Install
 
-On macOS Apple Silicon or Linux x86_64:
+On macOS Apple Silicon or Linux x86_64, trust the cask, then install it. Homebrew loads casks from taps other than its own only once you trust them:
 
 ```bash
+brew trust --cask until-dev/tap/until
 brew install --cask until-dev/tap/until
 ```
 
