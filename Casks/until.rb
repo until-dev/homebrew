@@ -1,9 +1,9 @@
 cask "until" do
   os macos: "darwin-arm64.dmg", linux: "linux-amd64.tar.gz"
 
-  version "0.18.0"
-  sha256 arm:          "54f3978eff0a8ede04166a6d3e3d7e5f74ef26b60c4a71479d5ca8edbad64f18",
-         x86_64_linux: "dcb03191c4e33b09a48d5ae73219096bdb03c64f6690a650d1a113d2578aac6f"
+  version "0.19.0"
+  sha256 arm:          "2fe34035c553ca46c5fd77fc9481675befbd4814e4cd38ce5df8d07919292ec4",
+         x86_64_linux: "31708731b49be38a8c9fbd71897910193fb2dc2458b8eec597ab6d173a0cb87e"
 
   on_macos do
     depends_on arch: :arm64
@@ -33,7 +33,7 @@ cask "until" do
   url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-desktop-#{os}"
   name "Until"
   desc "Git-backed ticketing for people and agents"
-  homepage "https://until.dev"
+  homepage "https://until.dev/"
 
   caveats <<~EOS
     Until sends one anonymous ping a day: a hash of you, a hash of your
