@@ -33,7 +33,7 @@ cask "until" do
   url "https://github.com/until-dev/homebrew-tap/releases/download/v#{version}/untl-desktop-#{os}"
   name "Until"
   desc "Git-backed ticketing for people and agents"
-  homepage "https://until.dev"
+  homepage "https://until.dev/"
 
   caveats <<~EOS
     Until sends one anonymous ping a day: a hash of you, a hash of your
